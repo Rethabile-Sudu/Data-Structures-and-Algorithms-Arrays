@@ -15,7 +15,6 @@ equals(..) receives an array list a parameter and compare every object in the ca
 
 getUnique() return a list without duplicates example (1,2,1,3,5,4,2,1) return (1,2,3,4,5)  (can use equals or compareTo)
 
-isPalindrome()  return true is the list is a palindrome meaning that is reads the same front to back as back to front example (1,2,3,3,2,1) and (p,e,e,p).  (can use equals or compareTo)
 
 getFiltered(..) this method receives a parameter and will return values larger (if needed smaller) than the parameter. example (1,2,5,4,6,3,7,9)  parameter (4) return (5,6,7,9). (uses compareTo)
 
