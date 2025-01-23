@@ -104,10 +104,43 @@ public class MyArrayList<E>
                data[j] = t;
             }
         }
-    return true;
-    
+    return true;    
+  }
+
+   public E getMax()
+  {
+      if(size == 0)
+       throw new IndexOutOfBoundsException("The list is empty");
+      
+      E max = data[0];
+      for(int i = 0;i < size-1; i++)
+      {
+          if(((Comparable)data[i]).compareTo(data[i+1]) > 0)
+           max = data[i+1];
+           data[i+1] = data[i];
+           data[i]=max;
+      }
+      return max;
       
   }
+  
+ 
+  
+    public E getMin()
+   {
+       if(size == 0)
+        throw new IndexOutOfBoundsException("The list is empty");
+        
+        E min = data[0];
+        for(int s = 0; s < size-1;s++)
+        {
+            if(((Comparable)data[s]).compareTo(data[s+1]) < 0)
+            min = data[s+1];
+            data[s+1] = data[s];
+            data[s] = min;
+        }
+        return min;    
+   }
 
   
   public int size() {
