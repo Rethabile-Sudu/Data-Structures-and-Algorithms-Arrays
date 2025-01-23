@@ -1,5 +1,7 @@
 # Data-Structures-and-Algorithms-Arrays
-Generic Arrays
+Arrays - it stores a list of data of a specific type or class.
+
+We can refine the array to be a better data structure by making it a generic array -  then it is a list of objects from any class.
 
 How can the functionality of the array list class be further improved? Functionality can be improved by adding additional methods for common operations on a array list needed by your application.
 
